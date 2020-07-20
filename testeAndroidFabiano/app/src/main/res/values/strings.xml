@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">OlhoVivoEstagio</string>
+    <string name="api_key">2bc28344ead24b3b5fe273ec7389d2e4d14abd2bad45abe6d8d774026193f894</string>
+    <string name="saudacoes_text">"Deseja procurar por: "</string>
+    <string name="buscar_intro">Buscar</string>
+
+    <string name="getlinedata_string">Você pode inserir o nome ou número da linha e será exibida informações como código identificador, origem, destino, etc.</string>
+    <string name="getstoppoint_string">Com o nome da parada ou endereço, exibiremos as paradas relacionadas.</string>
+    <string name="getstoppointLines_string">Com o código da parada exibiremos as linhas que passam por ela e quando os ônibus devem chegar. Para obter o código use a opção 2.</string>
+    <string name="getprevisaochegada_string">Insira o código parada e o código linha, separados por vírgula e informaremos quando a linha deve chegar. </string>
+    <string name="getInformacaoCorredor_string">Não há necessidade de argumentos. Clique em buscar e daremos informações dos corredores.</string>
+    <string name="getline_string">Com o código identificador da linha, exibiremos no mapa as posições dos ônibus dessa linha e suas paradas. Para conseguir o código, use Informações da linha.</string>
+    <string name="getParadasCorredor_string">Insira o código do corredor e exibiremos as paradas no mapa. Para conseguir o código, use a opção anterior.</string>
+
+    <string name="getlinedata_hint">Nome ou número da linha</string>
+    <string name="getstoppoint_hint">Nome ou endereço da parada</string>
+    <string name="getstoppointLines_hint">Código da parada</string>
+    <string name="getprevisaochegada_hint">Código parada, código linha.</string>
+    <string name="getInformacaoCorredor_hint">Clique em buscar.</string>
+    <string name="getline_hint">Código identificador da linha</string>
+
+    <string name="getParadasCorredor_hint">Código corredor.</string>
+
+    <string name="error404">Desculpe, mas não encontramos a informação que você procura.</string>
+    <string name="confirmar_string">Confirmar</string>
+    <string name="cancelar_string">Cancelar</string>
+
+    <string-array name="opcoesPesquisa">
+
+        <item>Informações da linha</item>
+        <item>Informações da Parada</item>
+        <item>Linhas da parada</item> <!--Linhas que passam nessa parada-->
+        <item>Previsão chegada linha na parada</item>
+        <item>Informações de corredor</item>
+        <item>Linha</item>
+        <item>Paradas de um corredor</item>
+
+
+    </string-array>
+
+</resources>

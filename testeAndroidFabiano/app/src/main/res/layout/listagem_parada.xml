@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="infoCollected"
+            type="com.example.olhovivoestagio.remote.models.InfoCollected" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/linhaTipoListagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{infoCollected.tipo}"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/linhaCodigoListagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@{infoCollected.codigo}"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@id/linhaNomeListagem"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linhaTipoListagem" />
+
+            <TextView
+                android:id="@+id/linhaNomeListagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@{infoCollected.nome}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/linhaCodigoListagem"
+                app:layout_constraintTop_toTopOf="@id/linhaCodigoListagem" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/linhaDescListagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{infoCollected.desc}"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linhaNomeListagem" />
+    </LinearLayout>
+</layout>
